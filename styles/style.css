@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Chaney Wide';
-    src: url('./fonts/CHANEY-Wide.otf') format('opentype');
+    src: url('/fonts/CHANEY-Wide.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
 @font-face {
     font-family: 'Chaney';
-    src: url('./fonts/CHANEY-Regular.otf') format('opentype');
+    src: url('/fonts/CHANEY-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
