@@ -35,6 +35,11 @@ p {
     color: #6E5400;
     font-size: 1rem;
 }
+ul, ol {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    color: #6E5400;
+}
 span {
     font-family: "DM Mono", monospace;
     color: #6E5400;
