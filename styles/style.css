@@ -73,6 +73,10 @@ header #location-tag {
     letter-spacing: 2.8px;
     color: #036746;
 }
+#header-buttons {
+    display: flex;
+    gap: 10px;
+}
 main {
     padding: 1rem;
 }
