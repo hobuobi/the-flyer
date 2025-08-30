@@ -165,13 +165,21 @@ main {
     overflow-x: scroll;
 }
 #carousel img {
-    height: 100%;
+    height: 90%;
     margin-right: 10px;
     border-radius: 10px;
     margin: 0px 20px;
-    box-shadow:#6E5400aa 0px 0px 20px;
+    box-shadow:#6e54005d 0px 0px 20px;
+    transform: rotate(-2deg) translateY(5%);
 }
-
+/*
+#carousel img:first-child {
+    margin-left: 50px;
+}
+#carousel img:last-child {
+    margin-right: 50px;
+}  
+*/ 
 @keyframes marquee {
     100% { transform: translateX(-200%); }
 }
