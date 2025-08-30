@@ -49,25 +49,41 @@ a {
     text-decoration: none;
     color: #f75910;
 }
-header h1 {
-    font-size: 3rem;
-    font-family: "Chaney Extended", sans-serif;
-    text-align: left;
+header {
+    margin-bottom: 20px;
+}
+#header {
+    padding: 0px 15px;
+}
+#banner { 
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #036746;
+    color: white;
+    font-family: "DM Mono", monospace;
+    text-align: center;
+    height: auto;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+    margin-inline-end: 0.5em; /* Optional: Add some space between icon and text */
 }
 #header-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 header img {
     width: 100%;
     height: auto;
 }
-header #location-tag {
+header span {
     display: block;
-    font-size: 1rem;
+    font-size: 1.2em;
     font-family: "DM Mono", monospace;
     font-weight: 500;
     letter-spacing: 2.8px;
@@ -77,9 +93,11 @@ header #location-tag {
     display: flex;
     gap: 10px;
 }
+/*
 main {
     padding: 1rem;
 }
+*/
 .issue-title {
     display: flex;
     flex-direction: column;

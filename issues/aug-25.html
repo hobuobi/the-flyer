@@ -13,15 +13,18 @@
 <body>
     <main>
         <header>
-            <a href="../index.html"><img src="../img/flyerLogo.svg" alt="The Flyer logo"></a>
-            <div id="header-info">
-                <span id="location-tag">BUSHROD, OAK</span>
-                <div id="header-buttons">
-                    <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/9FLNZ9r2ZMu9BDA6A"><div class="button">SUBSCRIBE</div></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://opencollective.com/lets-studio/projects/the-flyer"><div class="button" style="background-color: #036746;">DONATE</div></a>
+            <a href="https://forms.gle/u7TJLDsmxgQpHMDe8" target=”_blank” rel="noreferrer"><div id="banner">GET THE FLYER IN YOUR INBOX! :)</div></a>
+            <div id="header">
+                <div id="header-info">
+                    <span id="location-tag">
+                        <svg class="icon" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5166 0.951904C8.04571 0.952152 10.0956 3.00284 10.0957 5.53198C10.0957 9.54274 5.57014 12.558 5.5166 12.5935C5.5166 12.5935 0.936523 9.48133 0.936523 5.53198C0.936589 3.00268 2.98729 0.951904 5.5166 0.951904ZM5.5166 3.60132C4.52998 3.60132 3.72949 4.40083 3.72949 5.38745C3.72952 6.37405 4.52999 7.17358 5.5166 7.17358C6.50301 7.17335 7.30271 6.37391 7.30273 5.38745C7.30273 4.40097 6.50303 3.60155 5.5166 3.60132Z" fill="#036746"/>
+                        </svg>BUSHROD
+                    </span>
+                    <span id="localTime"></span>
                 </div>
+                <a href="../index.html"><img src="../img/flyerLogo.svg" alt="The Flyer logo"></a>
             </div>
-            <hr>
         </header>
         <div class="issue-title"><h1>August 2025</h1></div>
         <h2>A QUICK FOLLOW-UP ON BUSHROD PARK!</h2>
@@ -49,5 +52,17 @@
         <p>“Feral Ecology” is a project by Daniel Goldberg (East Bay resident, not sure where) that’s all about using urban foraging as a way to connect to each other and nature. They were recently in Dover Park, collecting pluots off their neighbors’ trees and making wine with it. Very cool!</p>
         <p>If you want to stay in the loop, they’ve got a <a href="https://chat.whatsapp.com/FGkpB53p0xB9qylUDgiyQf">WhatsApp group</a>. There’s also an event on “Feral Winemaking” coming up on September 7 – you can learn more on their website, <a href="https://www.feralecology.com">www.feralecology.com.</a></p>
     </main>
+    <script>
+        // Set the local info text
+        const localInfo = document.getElementById('local-info');
+        function updateTime() {
+            const now = new Date();
+            // Format the time as desired (e.g., HH:MM:SS)
+            const formattedTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+            document.getElementById('localTime').innerText = formattedTime;
+        }
+        updateTime(); // Initial call to set time immediately
+        setInterval(updateTime, 1000); // Update every second
+    </script>
 </body>
 </html>
