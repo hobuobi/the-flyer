@@ -163,6 +163,10 @@ main {
         width:50%;
         margin: auto;
     }
+    header {
+        width: 50%;
+        margin: auto;
+    }
     h1 {
         font-size: 3rem;
         margin-top: 1rem;
