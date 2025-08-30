@@ -154,6 +154,24 @@ main {
 .button:hover {
     background-color: #f75910cc;
 }
+
+#carousel {
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+#carousel img {
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow:#6E5400aa 0px 0px 20px;
+}
+
 @keyframes marquee {
     100% { transform: translateX(-200%); }
 }
