@@ -166,11 +166,16 @@ main {
 }
 #carousel img {
     height: 90%;
-    margin-right: 10px;
     border-radius: 10px;
-    margin: 0px 20px;
+    margin: 0px 10px;
     box-shadow:#6e54005d 0px 0px 20px;
     transform: rotate(-2deg) translateY(5%);
+    transition: 0.2s;
+}
+#carousel img:hover {
+    transform: rotate(0deg) translateY(2%);
+    box-shadow:#6e5400b3 0px 0px 0px;
+    opacity: 0.9;
 }
 /*
 #carousel img:first-child {
@@ -192,6 +197,7 @@ main {
     header {
         width: 50%;
         margin: auto;
+        margin-bottom: 20px;
     }
     h1 {
         font-size: 3rem;
