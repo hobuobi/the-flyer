@@ -21,28 +21,14 @@
             <a href="index.html"><img src="img/flyerLogo.svg" alt="The Flyer logo"></a>
         </div>
         <div id="navigation">
-            <a href="index.html"><span class="button">DIGEST</span></a>
-            <a href="convo.html"><span class="button inactive">COMMUNITY QUESTION</span></a>
+            <a href="index.html"><span class="button inactive">DIGEST</span></a>
+            <a href="convo.html"><span class="button">COMMUNITY QUESTION</span></a>
         </div>
     </header>
     <main>
-        <div id="carousel">
-            <a href="issues/sep-25.html"><img src="img/sep25.jpg"></a>
-            <a href="issues/aug-25.html"><img src="img/aug25.jpg"></a>
-            <a href="issues/jul-25.html"><img src="img/jul25.jpg"></a>
-        </div>
-        <div class="issues">
-            <a href="issues/aug-25.html"><div class="issue" id="aug-25">
-                <h3>AUGUST 2025</h3>
-                <p class="marq">BACK-TO-SCHOOL SUPPORT • FOLLOW-UP ON BUSHROD PARK POLL • MAKING WINE FROM NEIGHBORHOOD TREES • BACK-TO-SCHOOL SUPPORT • FOLLOW-UP ON BUSHROD PARK POLL • MAKING WINE FROM NEIGHBORHOOD TREES</span>
-            </div></a>
-            <a href="issues/jul-25.html"><div class="issue" id="jul-25">
-                <h3>JULY 2025</h3>
-                <p class="marq">BUSHROD PARK IS A GEM • A NEW POLLINATOR GARDEN • PSYCH ROCK AT THE STARRY PLOUGH BUSHROD PARK IS A GEM • A NEW POLLINATOR GARDEN • PSYCH ROCK AT THE STARRY PLOUGH</span>
-            </div></a>
-        </div>
-        
+        <div class='polis' data-conversation_id='4jcm6hkeje'></div>
     </main>
+    <script async src='https://pol.is/embed.js'></script>
     <script>
         // Set the local info text
         const localInfo = document.getElementById('local-info');
@@ -55,16 +41,6 @@
         }
         updateTime(); // Initial call to set time immediately
         setInterval(updateTime, 1000); // Update every second
-
-        // randomize rotation of carousel images
-        const images = carousel.querySelectorAll('img');
-        function getRandomFloat(min, max) {
-            return Math.random() * (max - min) + min;
-        }
-        images.forEach(img => {
-            img.style.setProperty('--rotation', `${getRandomFloat(-3,3)}deg`);
-        })
-
     </script>
 </body>
 </html>
