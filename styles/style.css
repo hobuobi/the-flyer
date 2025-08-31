@@ -93,11 +93,11 @@ header span {
     display: flex;
     gap: 10px;
 }
-/*
+
 main {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
-*/
+
 .issue-title {
     display: flex;
     flex-direction: column;
