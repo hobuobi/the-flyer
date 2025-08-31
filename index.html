@@ -42,6 +42,7 @@
     <script>
         // Set the local info text
         const localInfo = document.getElementById('local-info');
+        const carousel = document.getElementById('carousel');
         function updateTime() {
             const now = new Date();
             // Format the time as desired (e.g., HH:MM:SS)
@@ -50,6 +51,16 @@
         }
         updateTime(); // Initial call to set time immediately
         setInterval(updateTime, 1000); // Update every second
+
+        // randomize rotation of carousel images
+        const images = carousel.querySelectorAll('img');
+        function getRandomFloat(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        images.forEach(img => {
+            img.style.setProperty('--rotation', `${getRandomFloat(-3,3)}deg`);
+        })
+
     </script>
 </body>
 </html>
