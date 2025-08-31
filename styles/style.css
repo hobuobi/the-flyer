@@ -154,6 +154,37 @@ main {
 .button:hover {
     background-color: #f75910cc;
 }
+
+#carousel {
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+#carousel img {
+    height: 90%;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow:#6e54005d 0px 0px 20px;
+    transform: rotate(var(--rotation, 3deg)) translateY(5%);
+    transition: 0.2s;
+}
+#carousel img:hover {
+    transform: rotate(0deg) translateY(2%);
+    box-shadow:#6e5400b3 0px 0px 0px;
+    opacity: 0.9;
+}
+/*
+#carousel img:first-child {
+    margin-left: 50px;
+}
+#carousel img:last-child {
+    margin-right: 50px;
+}  
+*/ 
 @keyframes marquee {
     100% { transform: translateX(-200%); }
 }
@@ -162,6 +193,11 @@ main {
     main {
         width:50%;
         margin: auto;
+    }
+    header {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
     }
     h1 {
         font-size: 3rem;
