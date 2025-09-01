@@ -102,9 +102,9 @@ header img {
 }
 /*
 main {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
-*/
+
 .issue-title {
     display: flex;
     flex-direction: column;
