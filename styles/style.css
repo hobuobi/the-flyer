@@ -226,6 +226,12 @@ main {
     h3 {
         font-size: 2.2rem;
     }
+    p {
+        font-size: 1.2rem;
+    }
+    ul {
+        font-size: 1.2rem;
+    }
     .issue p {
         animation: marquee 12s linear infinite;
     }
