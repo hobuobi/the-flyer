@@ -28,15 +28,15 @@ app.use('/static/fonts', express.static(path.join(__dirname, 'fonts')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.render('index');
 });
 
 app.get('/submit', (req, res) => {
-  res.sendFile(path.join(__dirname, 'submit.html'));
+  res.render('submit');
 });
 
 app.get('/convo', (req, res) => {
-  res.sendFile(path.join(__dirname, 'convo.html'));
+  res.render('convo');
 });
 
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)

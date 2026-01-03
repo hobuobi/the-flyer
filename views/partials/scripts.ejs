@@ -1,0 +1,9 @@
+<script>
+    function updateTime() {
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+        document.getElementById('localTime').innerText = formattedTime;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
