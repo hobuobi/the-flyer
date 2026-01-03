@@ -53,6 +53,19 @@ app.get('/issues/:slug', (req, res) => {
   res.render('issue', { title: data.title, content: html });
 });
 
+/*
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+*/
+
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+// For Vercel
+export default app;
