@@ -31,7 +31,6 @@ app.get('/convo', (req, res) => {
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)
 app.get('/issues/:slug', (req, res) => {
   const filePath = path.join(__dirname, 'content', 'issues', `${req.params.slug}.md`);
-  console.log(filePath);
   if (!fs.existsSync(filePath)) {
     return res.status(404).send('Issue not found');
   }
