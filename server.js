@@ -1,7 +1,13 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+const { marked } = require('marked');
+const matter = require('gray-matter');
 
 const app = express();
+// Set up EJS
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 const PORT = process.env.PORT || 3000;
 
 // Serve static files under /static
@@ -24,12 +30,17 @@ app.get('/convo', (req, res) => {
 
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)
 app.get('/issues/:slug', (req, res) => {
-  const filePath = path.join(__dirname, 'issues', `${req.params.slug}.html`);
-  res.sendFile(filePath, (err) => {
-    if (err) {
-      res.status(404).send('Issue not found');
-    }
-  });
+  const filePath = path.join(__dirname, 'content', 'issues', `${req.params.slug}.md`);
+  console.log(filePath);
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).send('Issue not found');
+  }
+
+  const file = fs.readFileSync(filePath, 'utf-8');
+  const { data, content } = matter(file);
+  const html = marked(content);
+
+  res.render('issue', { title: data.title, content: html });
 });
 
 app.listen(PORT, () => {
