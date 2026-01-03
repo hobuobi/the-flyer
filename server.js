@@ -1,8 +1,19 @@
-const express = require('express');
+/*const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { marked } = require('marked');
-const matter = require('gray-matter');
+const matter = require('gray-matter'); */
+
+import { fileURLToPath } from 'node:url';
+import { dirname } from 'node:path';
+import { marked } from 'marked';
+import express from 'express';
+import path from 'node:path';
+import fs from 'node:fs';
+import matter from 'gray-matter';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 // Set up EJS
