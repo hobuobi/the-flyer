@@ -49,9 +49,6 @@ a {
     text-decoration: none;
     color: #f75910;
 }
-header {
-    margin-bottom: 20px;
-}
 #header {
     padding: 0px 15px;
 }
@@ -211,7 +208,6 @@ main {
     header {
         width: 50%;
         margin: auto;
-        margin-bottom: 20px;
     }
     h1 {
         font-size: 3rem;
@@ -234,5 +230,9 @@ main {
     }
     .issue p {
         animation: marquee 12s linear infinite;
+    }
+
+    #navigation span {
+        font-size: 1.2rem;
     }
 }
