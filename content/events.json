@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Community Public Safety Meeting",
+    "date": "2025-01-12",
+    "location": "Memorial Tabernacle Church",
+    "time": "6:00PM",
+    "link": "https://example.com/safety-meeting",
+    "description": "Join us for a discussion on neighborhood safety initiatives."
+  },
+  {
+    "name": "North Oakland Farmers Market",
+    "date": "2025-01-18",
+    "location": "Temescal Plaza",
+    "time": "9:00AM"
+  },
+  {
+    "name": "Park Cleanup Day",
+    "date": "2025-01-25",
+    "location": "Bushrod Park",
+    "time": "10:00AM",
+    "description": "Help us clean up the park! Gloves and bags provided."
+  }
+]
