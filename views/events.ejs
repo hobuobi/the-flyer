@@ -6,6 +6,7 @@
 <body>
     <%- include('partials/header', { activeNav: 'events' }) %>
     <main>
+        <p id="intro">Here is a selection of events in North Oakland. It is definitely not comprehensive; if you would like to see an event here, <a href="mailto:humphrey@letsstudio.org">contact me.</a></p>
         <% for (const [month, events] of Object.entries(eventsByMonth)) { %>
         <h2 style="margin-bottom:20px; color:#6E540066"><%= month %></h2>
         <div class="events" style="width:100%">
