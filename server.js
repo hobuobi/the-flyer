@@ -39,6 +39,36 @@ app.get('/convo', (req, res) => {
   res.render('convo');
 });
 
+app.get('/events', (req, res) => {
+  const eventsPath = path.join(__dirname, 'content', 'events.json');
+  const eventsData = JSON.parse(fs.readFileSync(eventsPath, 'utf-8'));
+
+  // Group events by month
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthAbbr = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+                     'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+
+  const eventsByMonth = {};
+  eventsData.forEach(event => {
+    const date = new Date(event.date);
+    const monthIndex = date.getMonth();
+    const monthKey = monthNames[monthIndex];
+
+    if (!eventsByMonth[monthKey]) {
+      eventsByMonth[monthKey] = [];
+    }
+
+    eventsByMonth[monthKey].push({
+      ...event,
+      day: date.getDate(),
+      monthAbbr: monthAbbr[monthIndex]
+    });
+  });
+
+  res.render('events', { eventsByMonth });
+});
+
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)
 app.get('/issues/:slug', (req, res) => {
   const filePath = path.join(__dirname, 'content', 'issues', `${req.params.slug}.md`);

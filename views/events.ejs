@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header', { activeNav: 'events' }) %>
+    <main>
+        <% for (const [month, events] of Object.entries(eventsByMonth)) { %>
+        <h2 style="margin-bottom:20px; color:#6E540066"><%= month %></h2>
+        <div class="events" style="width:100%">
+            <% events.forEach(event => { %>
+            <% if (event.link) { %>
+            <a href="<%= event.link %>" target="_blank" rel="noreferrer">
+            <% } %>
+            <div class="event">
+                <div class="date-box">
+                    <div class="month"><%= event.monthAbbr %></div>
+                    <div class="day"><%= event.day %></div>
+                </div>
+                <div>
+                    <h3><%= event.name %></h3>
+                    <p class="event-info"><span class="event-loc"><%= event.location %></span> • <span class="event-time"><%= event.time %></span></p>
+                    <% if (event.description) { %>
+                    <p class="event-desc"><%= event.description %></p>
+                    <% } %>
+                </div>
+            </div>
+            <% if (event.link) { %>
+            </a>
+            <% } %>
+            <% }); %>
+        </div>
+        <% } %>
+    </main>
+    <%- include('partials/scripts') %>
+</body>
+</html>
