@@ -54,7 +54,6 @@ a {
 }
 #banner { 
     width: 100%;
-    padding: 10px 0px;
     background-color: #036746;
     color: white;
     font-family: "DM Mono", monospace;
@@ -68,11 +67,13 @@ a {
     margin-inline-end: 0.5em; /* Optional: Add some space between icon and text */
 }
 #header-info {
-    width: 100%;
+    width: calc(100% - 20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    background: #036746;
 }
 header img {
     width: 100%;
@@ -80,11 +81,11 @@ header img {
 }
 #header-info span {
     display: block;
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-family: "DM Mono", monospace;
     font-weight: 500;
     letter-spacing: 2.8px;
-    color: #036746;
+    color: white;
 }
 #header-buttons {
     display: flex;
