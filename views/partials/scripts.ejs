@@ -1,9 +1,54 @@
 <script>
+    // Update time display
     function updateTime() {
         const now = new Date();
         const formattedTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
         document.getElementById('localTime').innerText = formattedTime;
     }
+
+    // Update date display
+    function updateDate() {
+        const now = new Date();
+        const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+        const month = months[now.getMonth()];
+        const day = String(now.getDate()).padStart(2, '0');
+        const year = now.getFullYear();
+        document.getElementById('localDate').innerText = `${month} ${day} ${year}`;
+    }
+
+    // Info rotator
+    const infoItems = ['localTime', 'localDate', 'localWeather'];
+    let currentIndex = 0;
+
+    function rotateInfo() {
+        const currentEl = document.getElementById(infoItems[currentIndex]);
+        const nextIndex = (currentIndex + 1) % infoItems.length;
+        const nextEl = document.getElementById(infoItems[nextIndex]);
+
+        // Exit current
+        currentEl.classList.remove('active');
+        currentEl.classList.add('exit');
+
+        // Enter next
+        nextEl.classList.remove('exit');
+        nextEl.classList.add('active');
+
+        // Clean up exit class after transition
+        setTimeout(() => {
+            currentEl.classList.remove('exit');
+        }, 400);
+
+        currentIndex = nextIndex;
+    }
+
+    // Initialize
     updateTime();
+    updateDate();
+    document.getElementById('localTime').classList.add('active');
+
+    // Update time every second
     setInterval(updateTime, 1000);
+
+    // Rotate every 5 seconds
+    setInterval(rotateInfo, 5000);
 </script>
