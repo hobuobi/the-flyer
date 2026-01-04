@@ -222,6 +222,7 @@ main {
 .event-info {
     margin-top: 0.3rem;
     text-transform: uppercase;
+    color: #6E5400AA;
 }
 /*
 #carousel img:first-child {
