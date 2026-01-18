@@ -74,8 +74,11 @@ a {
     padding: 10px 10px;
     margin-bottom: 20px;
     background: #036746;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
-header img {
+#header img {
     width: 100%;
     height: auto;
 }
@@ -220,9 +223,9 @@ main {
     color: #6E540066;
     width: calc(100%-20px);
     background-color: #FFF9E4;
-    padding: 10px; 
+    padding: 10px;
     position: sticky;
-    top: 0;
+    top: 40px;
     border-bottom: solid 1px #6E540033;
 }
 .event {
@@ -231,6 +234,9 @@ main {
     padding: 15px 0px;
     align-items: flex-start;
     gap: 20px;
+}
+.event:hover {
+    background-color: #ffee906f;
 }
 .event h3 {
     margin-top: 10px;
@@ -277,7 +283,12 @@ main {
         width:50%;
         margin: auto;
     }
-    header {
+    #header-info {
+        width: calc(50% - 20px);
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #header {
         width: 50%;
         margin: auto;
     }
