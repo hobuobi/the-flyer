@@ -51,9 +51,7 @@ app.get('/events', (req, res) => {
   // Get the Sunday that starts the week containing a given date (using UTC to avoid timezone issues)
   function getWeekStart(date) {
     const d = new Date(date);
-    console.log(d.toUTCString());
     const day = d.getUTCDay(); // 0 = Sunday
-    console.log('Day of week:', day);
     d.setUTCDate(d.getUTCDate() - day);
     return d;
   }

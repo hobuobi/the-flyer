@@ -216,7 +216,15 @@ main {
     box-shadow:#6e5400b3 0px 0px 0px;
     opacity: 0.9;
 }
-
+.week-label {
+    color: #6E540066;
+    width: calc(100%-20px);
+    background-color: #FFF9E4;
+    padding: 10px; 
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1px #6E540033;
+}
 .event {
     display: flex;
     border-bottom: 1px solid #ccc;

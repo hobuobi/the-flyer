@@ -8,7 +8,7 @@
     <main>
         <p id="intro">Here is a selection of events in North Oakland. It is definitely not comprehensive; if you would like to see an event here, <a href="mailto:humphrey@letsstudio.org">contact me.</a></p>
         <% for (const [week, events] of Object.entries(eventsByWeek)) { %>
-        <h2 style="margin-bottom:20px; color:#6E540066"><%= week %></h2>
+        <div class="week-label"><span><%= week %></span></div>
         <div class="events" style="width:100%">
             <% events.forEach(event => { %>
             <% if (event.link) { %>
