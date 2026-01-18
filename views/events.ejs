@@ -18,13 +18,14 @@
         </div>
 
         <% for (const [week, events] of Object.entries(eventsByWeek)) { %>
+        <div class="week-section">
         <div class="week-label"><span><%= week %></span></div>
         <div class="events" style="width:100%">
             <% events.forEach(event => { %>
             <% if (event.link) { %>
             <a href="<%= event.link %>" target="_blank" rel="noreferrer">
             <% } %>
-            <div class="event">
+            <div class="event" data-tags="<%= event.tags ? event.tags.join(',') : '' %>">
                 <div class="date-box">
                     <div class="month"><%= event.monthAbbr %></div>
                     <div class="day"><%= event.day %></div>
@@ -38,6 +39,7 @@
             </a>
             <% } %>
             <% }); %>
+        </div>
         </div>
         <% } %>
     </main>

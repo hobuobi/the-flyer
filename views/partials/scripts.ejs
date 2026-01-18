@@ -51,4 +51,49 @@
 
     // Rotate every 5 seconds
     setInterval(rotateInfo, 5000);
+
+    // Event filtering
+    const filterButtons = document.querySelectorAll('#filters .button');
+    const events = document.querySelectorAll('.event');
+    const weekSections = document.querySelectorAll('.week-section');
+
+    function filterEvents() {
+        const activeButton = document.querySelector('#filters .button:not(.inactive)');
+        const activeTag = activeButton ? activeButton.textContent.toLowerCase() : null;
+
+        events.forEach(event => {
+            const tags = event.dataset.tags ? event.dataset.tags.split(',') : [];
+            const show = !activeTag || tags.includes(activeTag);
+
+            // Hide/show event (and parent <a> if exists)
+            const wrapper = event.parentElement.tagName === 'A' ? event.parentElement : event;
+            wrapper.style.display = show ? '' : 'none';
+        });
+
+        // Hide week sections with no visible events
+        weekSections.forEach(section => {
+            const visibleEvents = section.querySelectorAll('.event');
+            const hasVisible = Array.from(visibleEvents).some(e => {
+                const wrapper = e.parentElement.tagName === 'A' ? e.parentElement : e;
+                return wrapper.style.display !== 'none';
+            });
+            section.style.display = hasVisible ? '' : 'none';
+        });
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const wasActive = !button.classList.contains('inactive');
+
+            // Reset all buttons to inactive
+            filterButtons.forEach(b => b.classList.add('inactive'));
+
+            // If clicking an inactive button, activate it
+            if (!wasActive) {
+                button.classList.remove('inactive');
+            }
+
+            filterEvents();
+        });
+    });
 </script>
