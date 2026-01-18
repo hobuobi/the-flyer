@@ -43,30 +43,40 @@ app.get('/events', (req, res) => {
   const eventsPath = path.join(__dirname, 'content', 'events.json');
   const eventsData = JSON.parse(fs.readFileSync(eventsPath, 'utf-8'));
 
-  // Group events by month
-  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                      'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthNames = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE',
+                      'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
   const monthAbbr = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
                      'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
-  const eventsByMonth = {};
+  // Get the Sunday that starts the week containing a given date (using UTC to avoid timezone issues)
+  function getWeekStart(date) {
+    const d = new Date(date);
+    console.log(d.toUTCString());
+    const day = d.getUTCDay(); // 0 = Sunday
+    console.log('Day of week:', day);
+    d.setUTCDate(d.getUTCDate() - day);
+    return d;
+  }
+
+  // Group events by week (starting Sunday)
+  const eventsByWeek = {};
   eventsData.forEach(event => {
     const date = new Date(event.date);
-    const monthIndex = date.getMonth();
-    const monthKey = monthNames[monthIndex];
+    const weekStart = getWeekStart(date);
+    const weekKey = `WEEK OF ${monthNames[weekStart.getUTCMonth()]} ${weekStart.getUTCDate()}`;
 
-    if (!eventsByMonth[monthKey]) {
-      eventsByMonth[monthKey] = [];
+    if (!eventsByWeek[weekKey]) {
+      eventsByWeek[weekKey] = [];
     }
 
-    eventsByMonth[monthKey].push({
+    eventsByWeek[weekKey].push({
       ...event,
-      day: date.getDate(),
-      monthAbbr: monthAbbr[monthIndex]
+      day: date.getUTCDate(),
+      monthAbbr: monthAbbr[date.getUTCMonth()]
     });
   });
 
-  res.render('events', { eventsByMonth });
+  res.render('events', { eventsByWeek });
 });
 
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)
