@@ -227,6 +227,7 @@ main {
     position: sticky;
     top: 97px;
     border-bottom: solid 1px #6E540033;
+    z-index:8;
 }
 .event {
     display: flex;
@@ -276,6 +277,7 @@ main {
     padding: 10px;
     border: solid 1px #6E540033;
     border-width: 1px 0px;
+    z-index:9;
 }
 #filters-label {
     flex-shrink: 0;
