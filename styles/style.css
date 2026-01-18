@@ -225,7 +225,7 @@ main {
     background-color: #FFF9E4;
     padding: 10px;
     position: sticky;
-    top: 40px;
+    top: 97px;
     border-bottom: solid 1px #6E540033;
 }
 .event {
@@ -265,6 +265,32 @@ main {
     margin-top: 0.3rem;
     text-transform: uppercase;
     color: #6E5400AA;
+}
+#event-filters {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: sticky;
+    top: 40px;
+    background-color: #FFF9E4;
+    padding: 10px;
+    border: solid 1px #6E540033;
+    border-width: 1px 0px;
+}
+#filters-label {
+    flex-shrink: 0;
+}
+#filters {
+    display: flex;
+    gap: 10px;overflow-x: auto;
+    overflow-y: hidden;
+  
+  /* Optional: hide scrollbar but keep functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+#filters .button.inactive {
+    background-color: #FAE3B7
 }
 /*
 #carousel img:first-child {
