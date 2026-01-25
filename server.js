@@ -43,6 +43,9 @@ app.get('/events', (req, res) => {
   const eventsPath = path.join(__dirname, 'content', 'events.json');
   const eventsData = JSON.parse(fs.readFileSync(eventsPath, 'utf-8'));
 
+  // Sort events chronologically
+  eventsData.sort((a, b) => new Date(a.date) - new Date(b.date));
+
   const monthNames = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE',
                       'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
   const monthAbbr = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
