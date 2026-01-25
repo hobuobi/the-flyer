@@ -98,6 +98,204 @@
     "time": "6:00PM",
     "link": "https://www.preservedgoods.com/event-details/making-preserved-lemons-in-community",
     "tags": ["food"]
+  }, 
+   {
+    "name": "SPRO Machine (Coffee Pop-Up)",
+    "date": "2/1/2026",
+    "location": "Local Economy",
+    "time": "10:30 AM",
+    "link": "https://www.instagram.com/p/DTx2ikClDiE/?img_index=1",
+    "one-liner": "",
+    "description": "Hi hello! Posting here as half of a brand-new coffee popup by myself and Christopher Sturm : spro.machine. Here to help you unlock that elusive 25th hour."
+  },
+  {
+    "name": "Reading: Solidarity Economics",
+    "date": "2/4/2026",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "link": "https://luma.com/zo8f87i5",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Paint and Chat",
+    "date": "2/11/2026",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "link": "https://www.thelocaleconomy.com/events/b07yspqkwc9ru1v19h0yi1w46vinqz",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "An Invitation to Talk About Death and Dying, Vol 2",
+    "date": "2/15/2026",
+    "location": "Local Economy",
+    "time": "10:00 AM",
+    "link": "https://www.thelocaleconomy.com/events/an-invitation-to-talk-about-death-and-dying-vol-2",
+    "one-liner": "",
+    "description": "\"This is not a grief session or a death cafe. It’s an invitation to gather and explore topics about aging and dying in an actionable and approachable way. We encourage you to show up and participate at your comfort level. Bring your curiosity, and a pen and paper.\""
+  },
+  {
+    "name": "Grateful Starry Nights w/ Preston Barnes and Friends",
+    "date": "2/21/2026",
+    "location": "The Starry Plough",
+    "time": "8:00 PM",
+    "link": "https://thestarryplough.com/event/grateful-starry-nights-w-preston-barnes-and-friends/the-starry-plough-pub/california/",
+    "one-liner": "",
+    "description": "Hosted by Preston Barnes, Grateful Starry Nights brings together some of the Bay Area’s best musicians for a night celebrating the music of the Grateful Dead, JGB and more. Bring your dancing shoes and come join the party!"
+  },
+  {
+    "name": "Mehmooni",
+    "date": "2/14/2026",
+    "location": "The Starry Plough",
+    "time": "8:00 PM",
+    "link": "https://thestarryplough.com/event/mehmooni-4/the-starry-plough-pub/california/",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Darts Tournament",
+    "date": "2/6/2026",
+    "location": "The Starry Plough",
+    "time": "7:30 PM",
+    "link": "https://thestarryplough.com/event/darts-night-9/the-starry-plough-pub/california/",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Love Fest Open Mic",
+    "date": "2/14/2025",
+    "location": "La Peña",
+    "time": "7:30 PM",
+    "link": "https://lapena.org/event/love-fest-2026/",
+    "one-liner": "",
+    "description": "31st anniversary Love Fest, Aya de Leon started a small self-love open mic in the lounge at La Peña. Performances, live music, and dancing!"
+  },
+  {
+    "name": "Baile Brasil: Samba & Forró Dance Party ft. Oakland Samba Revue",
+    "date": "2/7/2026",
+    "location": "La Peña",
+    "time": "7:30 PM",
+    "link": "https://lapena.org/event/baile-brasil-samba-forro-dance-party-ft-oakland-samba-revue/",
+    "one-liner": "",
+    "description": "Join us on Sunday, February 7th at 7pm at La Peña Cultural Center for Baile Brasil, a night of live music and dance (samba de gafieira, forró, funk, jazz, and bolero) featuring Oakland Samba Revue (OSR) and a special dance lesson with Weslei Guimarães."
+  },
+  {
+    "name": "East Bay Yesterday: Bay Aerial",
+    "date": "2/13/2026",
+    "location": "La Peña",
+    "time": "8:00 PM",
+    "link": "https://lapena.org/event/east-bay-yesterday-bay-aerial-watching-our-region-transform-from-above/",
+    "one-liner": "",
+    "description": "What does looking at half a century of aerial photographs reveal about the Bay Area’s ongoing transformation? East Bay Yesterday host Liam O’Donoghue will explore this question by closely examining a mysterious archive of images he rescued from destruction. These photos show much more than changing landscapes – they illustrate the values, circuitry, and impact of our civilization, for better or worse."
+  },
+  {
+    "name": "Screening of \"Eyes of the Rainbow\"",
+    "date": "2/17/2026",
+    "location": "La Peña",
+    "time": "7:00 PM",
+    "link": "https://lapena.org/event/when-we-win-political-education-film-series-2/",
+    "one-liner": "",
+    "description": "When We Win spotlights people’s struggles for liberation, decolonization, and the world to come. Each screening will include political education with facilitation, interactive discussions, and conversations featuring remarks from filmmakers and/or organizers active in peoples’ movements for liberation and justice."
+  },
+  {
+    "name": "POETRY ES RESISTIR",
+    "date": "2/19/2026",
+    "location": "La Peña",
+    "time": "7:00 PM",
+    "link": "https://lapena.org/event/poetry-es-resistir/",
+    "one-liner": "",
+    "description": "POETRY ES RESISTIR with live music, teatro and poetry illuminating the struggle and beauty from North to South America. Featuring performances by: Duo Made y Feña, Herbert Siguenza of Culture Clash, Lorna Dee Cervantes, Paul S. Flores, Matt Sedillo, Fernando Torres"
+  },
+  {
+    "name": "¡BAILA! Community. Dance. Party. ft. Carlos Xavier Salsa Band",
+    "date": "2/20/2026",
+    "location": "La Peña",
+    "time": "8:00 PM",
+    "link": "https://lapena.org/event/baila-community-dance-party-ft-live-salsa-5/",
+    "one-liner": "",
+    "description": "BAILA is like a spontaneous dance party that broke out in your kitchen, only if your kitchen had big wood floors, a live Salsa band, a powerful sound system, an upgraded lighting system and 200 of your friends, chosen family, and new faces ready to join the community."
+  },
+  {
+    "name": "Las Mermeladas Community Music Jam",
+    "date": "2/18/2026",
+    "location": "La Peña",
+    "time": "6:30 PM",
+    "link": "https://lapena.org/event/las-mermeladas-at-la-pena-2-2/2026-02-18/",
+    "one-liner": "",
+    "description": "Every 3rd Wednesday, musicians of all ages and skill levels come together to create music in the moment, led by José Roberto Hernández. Whether you play an instrument, love to sing, or simply want to listen and dance, there’s a place for you here."
+  },
+  {
+    "name": "North Oakland Assembly",
+    "date": "2/8/2026",
+    "location": "Gold Gym",
+    "time": "3:00 PM",
+    "link": "",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "North Oakland Assembly",
+    "date": "2/22/2026",
+    "location": "Gold Gym",
+    "time": "3:00 PM",
+    "link": "",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Baby Rave (Februrary)",
+    "date": "2/21/2026",
+    "location": "East Bay Community Space",
+    "time": "9:30 AM",
+    "link": "https://linktr.ee/babyraveoakland",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Community Board Game Night",
+    "date": "2/19/2026",
+    "location": "East Bay Community Space",
+    "time": "7:00 PM",
+    "link": "https://eastbaycommunityspace.org/event/ebcs-board-game-night-2/2026-02-19/",
+    "one-liner": "",
+    "description": "Why be bored when you could BOARD?! Roll on over to EBCS for our monthly board game night. This donation-based (no one turned away for lack of funds) community event is on the third Thursday of every month in the Telegraph room. Games start at 7pm and the event lasts until ~10/11pm. Bring games, snacks, and friends!"
+  },
+  {
+    "name": "Unwind: Knit, Crochet, and Fiber Social",
+    "date": "2/9/2026",
+    "location": "Ace Makerspace",
+    "time": "6:00 PM",
+    "link": "https://www.acemakerspace.org/event/unwind-knit-crochet-and-fiber-social-2-9-26/",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Hello Stitch @ Ace: Make Comfy Pants with Kristen Takakuwa",
+    "date": "2/21/2026",
+    "location": "Ace Makerspace",
+    "time": "10:00 AM",
+    "link": "https://www.hellostitchstudio.com/events/learn-to-quilt-with-terri-carpenter-3?_ga=2.115157127.1268167376.1769334916-717329570.1769334916",
+    "one-liner": "",
+    "description": ""
+  },
+  {
+    "name": "Sewcial Night",
+    "date": "2/12/2026",
+    "location": "Ace Makerspace",
+    "time": "6:00 PM",
+    "link": "https://www.acemakerspace.org/event/sewcial-night-13/",
+    "one-liner": "",
+    "description": "Join fellow textiles enthusiasts for a night of creating in a social environment. The Ace Textiles program has a wide array of machines, tools, and supplies. Folks should expect to work independently; no instruction is provided at this event, though peer support often happens."
+  },
+  {
+    "name": "Adult Arts and Crafts",
+    "date": "2/25/2026",
+    "location": "Oakland Public Library (Temescal Branch)",
+    "time": "6:00 PM",
+    "link": "https://oaklandlibrary.bibliocommons.com/events/68ba7632400f532f004d777b",
+    "one-liner": "",
+    "description": ""
   }
 ]
 
