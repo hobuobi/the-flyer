@@ -96,4 +96,65 @@
             filterEvents();
         });
     });
+
+    // Night mode - automatically activates after sunset, persists via localStorage
+    window.isNightMode = () => document.documentElement.classList.contains('night-mode');
+
+    (async function initNightMode() {
+        let sunrise = null;
+        let sunset = null;
+
+        async function fetchSunTimes(lat, lng) {
+            try {
+                const response = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&formatted=0`);
+                const data = await response.json();
+                if (data.status === 'OK') {
+                    sunrise = new Date(data.results.sunrise);
+                    sunset = new Date(data.results.sunset);
+                }
+            } catch (e) {
+                // Fallback: use approximate times (6 AM / 6 PM)
+                const today = new Date();
+                sunrise = new Date(today.setHours(6, 0, 0, 0));
+                sunset = new Date(today.setHours(18, 0, 0, 0));
+            }
+        }
+
+        function setNightMode(isNight) {
+            document.documentElement.classList.toggle('night-mode', isNight);
+            localStorage.setItem('nightMode', isNight);
+            // Swap logo
+            const logo = document.getElementById('site-logo');
+            if (logo) {
+                logo.src = isNight ? '/static/img/flyerLogo_night.svg' : '/static/img/flyerLogo.svg';
+            }
+        }
+
+        function checkNightMode() {
+            if (!sunrise || !sunset) return;
+            const now = new Date();
+            const isNight = now < sunrise || now > sunset;
+            setNightMode(isNight);
+        }
+
+        // Get location and fetch sun times in background
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    await fetchSunTimes(position.coords.latitude, position.coords.longitude);
+                    checkNightMode();
+                },
+                async () => {
+                    await fetchSunTimes(37.8044, -122.2712); // Oakland fallback
+                    checkNightMode();
+                }
+            );
+        } else {
+            await fetchSunTimes(37.8044, -122.2712);
+            checkNightMode();
+        }
+
+        // Re-check every minute
+        setInterval(checkNightMode, 1000);
+    })();
 </script>

@@ -350,3 +350,96 @@ main {
         font-size: 1.2rem;
     }
 }
+
+/* Night Mode - activates after sunset */
+html.night-mode body {
+    background: #2D2745;
+    transition: background 0.5s ease;
+}
+html.night-mode h1,
+html.night-mode h2,
+html.night-mode h3,
+html.night-mode h4,
+html.night-mode h5,
+html.night-mode h6 {
+    color: #FFF9E4;
+}
+html.night-mode p,
+html.night-mode ul,
+html.night-mode ol,
+html.night-mode span {
+    color: #FFF9E4;
+}
+html.night-mode a {
+    color: #ff8c42;
+}
+html.night-mode #header-info {
+    background: #F86E1F;
+}
+html.night-mode #header-info span {
+    color: #FFF9E4;
+}
+html.night-mode .issue {
+    border-bottom-color: #4a4365;
+}
+html.night-mode .issue:hover {
+    background-color: #3d3560;
+}
+html.night-mode .issue h3 {
+    color: #FFF9E4;
+}
+html.night-mode .issue p {
+    color: #FFF9E488;
+}
+html.night-mode .button {
+    background-color: #F86E1F;
+    color: #FFF9E4;
+}
+html.night-mode .button:hover {
+    background-color: #ff8c42;
+}
+html.night-mode .button.inactive {
+    background-color: transparent;
+    color: #FFF9E4;
+}
+html.night-mode .button.inactive:hover {
+    background-color: #3d3560;
+}
+html.night-mode #filters .button.inactive {
+    background-color: #3d3560;
+}
+html.night-mode .week-label {
+    background-color: #2D2745;
+    color: #FFF9E488;
+    border-bottom-color: #4a4365;
+}
+html.night-mode #event-filters {
+    background-color: #2D2745;
+    border-color: #4a4365;
+}
+html.night-mode .event {
+    border-bottom-color: #4a4365;
+}
+html.night-mode .event:hover {
+    background-color: #3d3560;
+}
+html.night-mode .event h3 {
+    color: #FFF9E4;
+}
+html.night-mode .date-box {
+    background-color: #2D2745;
+    color: #FFF9E4;
+    border: 1px solid #4a4365;
+}
+html.night-mode .event-info {
+    color: #FFF9E4AA;
+}
+html.night-mode #carousel img {
+    box-shadow: #1a1a2e 0px 0px 20px;
+}
+html.night-mode #intro {
+    color: #FFF9E4AA;
+}
+html.night-mode #intro a {
+    color: #ff8c42;
+}
