@@ -1,12 +1,5 @@
 [
   {
-    "name": "TEST: Today's Event",
-    "date": "2026-01-25",
-    "location": "Test Location",
-    "time": "7:00PM",
-    "tags": ["music"]
-  },
-  {
     "name": "Blues Night",
     "date": "2026-01-09",
     "location": "Starry Plough",
