@@ -242,25 +242,6 @@ main {
 .today-label span {
     color: #FFF9E4;
 }
-.today-event {
-    background-color: #036746;
-}
-.today-event span {
-    color: #FFF9E4;
-}
-.today-event:hover {
-    background-color: #024d34;
-}
-.today-event h3 {
-    color: #FFF9E4;
-}
-.today-event .event-info span{
-    color: #FFF9E4;
-}
-.today-event .date-box {
-    background-color: #FFF9E4;
-    color: #036746;
-}
 .event {
     display: flex;
     border-bottom: 1px solid #ccc;
@@ -289,6 +270,25 @@ main {
     min-width: 50px;
     font-family: "Chaney"; 
     font-weight: normal;
+}
+.today-event {
+    background-color: #036746;
+}
+.today-event span {
+    color: #FFF9E4;
+}
+.today-event:hover {
+    background-color: #024d34;
+}
+.today-event h3 {
+    color: #FFF9E4;
+}
+.today-event .event-info span{
+    color: #FFF9E4;
+}
+.today-event .date-box {
+    background-color: #FFF9E4;
+    color: #036746;
 }
 .date-box .day {
     font-size: 2rem;
@@ -479,7 +479,7 @@ html.night-mode #intro a {
 html.night-mode .today-label {
     background-color: #FFF9E4;
     color: #2D2745;
-    border-bottom-color: #ccc;
+    border-bottom-color: #FFF9E4;
 }
 html.night-mode .today-label span {
     color: #2D2745;

@@ -55,7 +55,7 @@
     // Event filtering
     const filterButtons = document.querySelectorAll('#filters .button');
     const events = document.querySelectorAll('.event');
-    const weekSections = document.querySelectorAll('.week-section');
+    const sections = document.querySelectorAll('.week-section, .today-section');
 
     function filterEvents() {
         const activeButton = document.querySelector('#filters .button:not(.inactive)');
@@ -70,10 +70,10 @@
             wrapper.style.display = show ? '' : 'none';
         });
 
-        // Hide week sections with no visible events
-        weekSections.forEach(section => {
-            const visibleEvents = section.querySelectorAll('.event');
-            const hasVisible = Array.from(visibleEvents).some(e => {
+        // Hide sections (today or week) with no visible events
+        sections.forEach(section => {
+            const sectionEvents = section.querySelectorAll('.event');
+            const hasVisible = Array.from(sectionEvents).some(e => {
                 const wrapper = e.parentElement.tagName === 'A' ? e.parentElement : e;
                 return wrapper.style.display !== 'none';
             });
