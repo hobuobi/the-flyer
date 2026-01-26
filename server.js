@@ -51,33 +51,52 @@ app.get('/events', (req, res) => {
   const monthAbbr = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
                      'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
-  // Get the Sunday that starts the week containing a given date (using UTC to avoid timezone issues)
-  function getWeekStart(date) {
-    const d = new Date(date);
-    const day = d.getUTCDay(); // 0 = Sunday
-    d.setUTCDate(d.getUTCDate() - day);
+  // Parse date string as local time (handles both "2026-01-25" and "1/25/2026" formats)
+  function parseLocalDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
     return d;
   }
 
-  // Group events by week (starting Sunday)
+  // Get the Sunday that starts the week containing a given date (local time)
+  function getWeekStart(date) {
+    const d = new Date(date);
+    const day = d.getDay(); // 0 = Sunday
+    d.setDate(d.getDate() - day);
+    return d;
+  }
+
+  // Get today's date string for comparison (local time)
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+  // Separate today's events and group the rest by week
+  const todayEvents = [];
   const eventsByWeek = {};
+
   eventsData.forEach(event => {
-    const date = new Date(event.date);
-    const weekStart = getWeekStart(date);
-    const weekKey = `WEEK OF ${monthNames[weekStart.getUTCMonth()]} ${weekStart.getUTCDate()}`;
+    const date = parseLocalDate(event.date);
+    const eventStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 
-    if (!eventsByWeek[weekKey]) {
-      eventsByWeek[weekKey] = [];
-    }
-
-    eventsByWeek[weekKey].push({
+    const enrichedEvent = {
       ...event,
-      day: date.getUTCDate(),
-      monthAbbr: monthAbbr[date.getUTCMonth()]
-    });
+      day: date.getDate(),
+      monthAbbr: monthAbbr[date.getMonth()]
+    };
+
+    if (eventStr === todayStr) {
+      todayEvents.push(enrichedEvent);
+    } else {
+      const weekStart = getWeekStart(date);
+      const weekKey = `WEEK OF ${monthNames[weekStart.getMonth()]} ${weekStart.getDate()}`;
+
+      if (!eventsByWeek[weekKey]) {
+        eventsByWeek[weekKey] = [];
+      }
+      eventsByWeek[weekKey].push(enrichedEvent);
+    }
   });
 
-  res.render('events', { eventsByWeek });
+  res.render('events', { todayEvents, eventsByWeek });
 });
 
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)

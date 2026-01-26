@@ -17,6 +17,32 @@
             </div>
         </div>
 
+        <% if (todayEvents.length > 0) { %>
+        <div class="today-section">
+        <div class="today-label"><span>TODAY</span></div>
+        <div class="events" style="width:100%">
+            <% todayEvents.forEach(event => { %>
+            <% if (event.link) { %>
+            <a href="<%= event.link %>" target="_blank" rel="noreferrer">
+            <% } %>
+            <div class="event today-event" data-tags="<%= event.tags ? event.tags.join(',') : '' %>">
+                <div class="date-box">
+                    <div class="month"><%= event.monthAbbr %></div>
+                    <div class="day"><%= event.day %></div>
+                </div>
+                <div>
+                    <h3><%= event.name %></h3>
+                    <p class="event-info"><span class="event-loc"><%= event.location %></span> • <span class="event-time"><%= event.time %></span></p>
+                </div>
+            </div>
+            <% if (event.link) { %>
+            </a>
+            <% } %>
+            <% }); %>
+        </div>
+        </div>
+        <% } %>
+
         <% for (const [week, events] of Object.entries(eventsByWeek)) { %>
         <div class="week-section">
         <div class="week-label"><span><%= week %></span></div>
