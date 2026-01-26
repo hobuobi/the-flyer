@@ -2,114 +2,15 @@
 <html lang="en">
 <head>
     <%- include('partials/head') %>
-    <style>
-        #passcode-modal {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-        }
-        #passcode-modal.hidden { display: none; }
-        #passcode-box {
-            background: #FFF9E4;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 300px;
-        }
-        html.night-mode #passcode-box { background: #2D2745; }
-        #passcode-input {
-            font-family: "DM Mono", monospace;
-            font-size: 1.5rem;
-            letter-spacing: 0.5rem;
-            text-align: center;
-            padding: 10px;
-            border: 2px solid #6E5400;
-            border-radius: 8px;
-            width: 100%;
-            box-sizing: border-box;
-            margin: 15px 0;
-        }
-        html.night-mode #passcode-input {
-            background: #3d3560;
-            border-color: #4a4365;
-            color: #FFF9E4;
-        }
-        #passcode-submit:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-        #passcode-error {
-            color: #d32f2f;
-            font-size: 0.9rem;
-            margin-top: 10px;
-            display: none;
-        }
-        .polis.locked { display: none; }
-    </style>
 </head>
 <body>
     <%- include('partials/header', { activeNav: 'convo' }) %>
     <main>
         <p id="intro">Here is a space to share thoughts on local issues. If there's something you think we should be talking about, <a href="mailto:humphrey@letsstudio.org">contact me.</a></p>
-        <div class='polis locked' data-conversation_id='4jcm6hkeje'></div>
+        <div class='polis' data-conversation_id='4jcm6hkeje'></div>
     </main>
-
-    <div id="passcode-modal">
-        <div id="passcode-box">
-            <p>Enter passcode to continue</p>
-            <input type="text" id="passcode-input" maxlength="6" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
-            <button id="passcode-submit" class="button" disabled>Submit</button>
-            <p id="passcode-error">Incorrect passcode</p>
-        </div>
-    </div>
 
     <script async src='https://pol.is/embed.js'></script>
     <%- include('partials/scripts') %>
-    <script>
-        (function() {
-            const PASSCODE = '123456';
-            const modal = document.getElementById('passcode-modal');
-            const input = document.getElementById('passcode-input');
-            const submit = document.getElementById('passcode-submit');
-            const error = document.getElementById('passcode-error');
-            const polis = document.querySelector('.polis');
-
-            // Check if already authenticated this session
-            if (sessionStorage.getItem('convoAuth') === 'true') {
-                modal.classList.add('hidden');
-                polis.classList.remove('locked');
-            }
-
-            // Only allow digits
-            input.addEventListener('input', () => {
-                input.value = input.value.replace(/\D/g, '').slice(0, 6);
-                submit.disabled = input.value.length !== 6;
-                error.style.display = 'none';
-            });
-
-            submit.addEventListener('click', checkPasscode);
-            input.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' && input.value.length === 6) checkPasscode();
-            });
-
-            function checkPasscode() {
-                if (input.value === PASSCODE) {
-                    sessionStorage.setItem('convoAuth', 'true');
-                    modal.classList.add('hidden');
-                    polis.classList.remove('locked');
-                } else {
-                    error.style.display = 'block';
-                    input.value = '';
-                    submit.disabled = true;
-                }
-            }
-
-            input.focus();
-        })();
-    </script>
 </body>
 </html>
