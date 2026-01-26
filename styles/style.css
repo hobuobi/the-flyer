@@ -254,8 +254,8 @@ main {
 .today-event h3 {
     color: #FFF9E4;
 }
-.today-event .event-info {
-    color: #FFF9E4AA;
+.today-event .event-info span{
+    color: #FFF9E4;
 }
 .today-event .date-box {
     background-color: #FFF9E4;
