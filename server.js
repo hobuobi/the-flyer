@@ -65,15 +65,22 @@ app.get('/events', (req, res) => {
     return d;
   }
 
-  // Get today's date string for comparison (local time)
+  // Get today's date for comparison (local time)
   const today = new Date();
+  today.setHours(0, 0, 0, 0);
   const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+  // Filter to only show current and future events
+  const futureEvents = eventsData.filter(event => {
+    const eventDate = parseLocalDate(event.date);
+    return eventDate >= today;
+  });
 
   // Separate today's events and group the rest by week
   const todayEvents = [];
   const eventsByWeek = {};
 
-  eventsData.forEach(event => {
+  futureEvents.forEach(event => {
     const date = parseLocalDate(event.date);
     const eventStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 
