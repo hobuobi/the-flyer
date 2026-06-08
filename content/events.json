@@ -316,6 +316,131 @@
     "link": "https://oaklandlibrary.bibliocommons.com/events/68ba7632400f532f004d777b",
     "one-liner": "",
     "description": ""
+  },
+  {
+    "name": "Afrobeat Music to the People",
+    "date": "2026-06-04",
+    "location": "The Starry Plough",
+    "time": "9:00 PM",
+    "tags": ["music"]
+  },
+  {
+    "name": "Sashiko Workshop (Japanese Mending Technique)",
+    "date": "2026-06-06",
+    "location": "Oakland Public Library (Temescal Branch)",
+    "time": "3:00 PM",
+    "tags": ["crafts", "learning"],
+    "link": "https://oaklandlibrary.bibliocommons.com/events/69f2e781213814b1b5258655?_gl=1*1wd2vcc*_ga*MTg3MjgzMzUwMC4xNzgwMzgwMTc3*_ga_L60VDC2VGD*czE3ODAzODAxNzckbzEkZzAkdDE3ODAzODAxNzckajYwJGwwJGgw*_ga_G99DMMNG39*czE3ODAzODAxNzckbzEkZzAkdDE3ODAzODA3MDgkajYwJGwwJGgw"
+  },
+  {
+    "name": "La Peña's 51st Anniversary (Cuban Dance Party)",
+    "date": "2026-06-06",
+    "location": "La Peña",
+    "time": "8:00 PM",
+    "tags": ["music"],
+    "link": "https://lapena.org/event/la-penas-51st-anniversary-fundraiser-ft-orq-la-moderna-tradicion/"
+  },
+  {
+    "name": "Resistance Poetry & Art Workshop",
+    "date": "2026-06-07",
+    "location": "The Starry Plough",
+    "time": "2:00 PM",
+    "tags": ["art", "activism"]
+  },
+  {
+    "name": "Talk: Civil Rights & Structural Attacks",
+    "date": "2026-06-07",
+    "location": "Local Economy",
+    "time": "5:00 PM",
+    "tags": ["activism", "learning"],
+    "link": "https://luma.com/b4fz5atz"
+  },
+  {
+    "name": "Blues Night (w/ Maggie Turner & the Outback Band)",
+    "date": "2026-06-12",
+    "location": "The Starry Plough",
+    "time": "8:00 PM",
+    "tags": ["music"],
+    "link": "https://thestarryplough.com/event/blues-night-24/the-starry-plough-pub/california/"
+  },
+  {
+    "name": "Tianguis (Market) & Community Block Party",
+    "date": "2026-06-13",
+    "location": "La Peña",
+    "time": "12:00 PM",
+    "tags": ["food", "fun"],
+    "link": "https://www.eventbrite.com/e/frida-kahlos-birthday-tianguis-outdoor-market-community-festival-tickets-1988071252634"
+  },
+  {
+    "name": "Happy Hour on the Patio",
+    "date": "2026-06-14",
+    "location": "Nick's Pizza",
+    "time": "3:00 PM",
+    "tags": ["food", "fun"]
+  },
+  {
+    "name": "Film: What These Walls Won't Hold (San Quentin During COVID-19)",
+    "date": "2026-06-16",
+    "location": "La Peña",
+    "time": "7:00 PM",
+    "tags": ["art", "activism"],
+    "link": "https://lapena.org/event/when-we-win-political-education-film-series-6/"
+  },
+  {
+    "name": "Kitchen Stories: Sharing Home Recipes",
+    "date": "2026-06-18",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "tags": ["food"],
+    "link": "https://luma.com/603gom7i"
+  },
+  {
+    "name": "Dykes with Drills: Intro to Tools Workshop",
+    "date": "2026-06-19",
+    "location": "Ace Makerspace",
+    "time": "11:00 AM",
+    "tags": ["learning"],
+    "link": "https://www.acemakerspace.org/event/dykes-with-drills-ace-makerspace-introduction-to-tools-workshop-6-19-26/"
+  },
+  {
+    "name": "Wardrobe Project Flea Market",
+    "date": "2026-06-20",
+    "location": "Rockridge BART",
+    "time": "11:00 AM",
+    "tags": ["fun"],
+    "link": "https://thewardrobeproject.com/our-flea-market"
+  },
+  {
+    "name": "Berkeley Juneteenth Festival",
+    "date": "2026-06-21",
+    "location": "Alcatraz & Adeline",
+    "time": "11:00 AM",
+    "tags": ["music", "activism"],
+    "link": "https://berkeleyjuneteenth.org/"
+  },
+  {
+    "name": "Adult Arts & Crafts",
+    "date": "2026-06-24",
+    "location": "Oakland Public Library (Temescal Branch)",
+    "time": "6:00 PM",
+    "tags": ["crafts", "learning"],
+    "link": "https://oaklandlibrary.bibliocommons.com/events/696417e130cbd582eff4bc0b"
+  },
+  {
+    "name": "Ambient Jazz and Bay Science",
+    "date": "2026-06-26",
+    "location": "Local Economy",
+    "time": "6:30 PM",
+    "tags": ["music"],
+    "link": "https://luma.com/av1d07q4"
+  },
+  {
+    "name": "Cumbia Night (w/ Los Alegres Callejeros)",
+    "date": "2026-06-26",
+    "location": "The Starry Plough",
+    "time": "9:00 PM",
+    "tags": ["music"],
+    "link": "https://thestarryplough.com/event/cumbia-night-25/the-starry-plough-pub/california/"
   }
 ]
 
