@@ -137,22 +137,8 @@
             setNightMode(isNight);
         }
 
-        // Get location and fetch sun times in background
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                async (position) => {
-                    await fetchSunTimes(position.coords.latitude, position.coords.longitude);
-                    checkNightMode();
-                },
-                async () => {
-                    await fetchSunTimes(37.8044, -122.2712); // Oakland fallback
-                    checkNightMode();
-                }
-            );
-        } else {
-            await fetchSunTimes(37.8044, -122.2712);
-            checkNightMode();
-        }
+        await fetchSunTimes(37.8044, -122.2712); // Oakland, CA
+        checkNightMode();
 
         // Re-check every minute
         setInterval(checkNightMode, 1000);
