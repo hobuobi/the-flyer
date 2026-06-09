@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header', { activeNav: 'subscribe' }) %>
+    <main>
+        <p id="intro">Subscribe to The Flyer, a semi-regular neighborhood newsletter for North Oakland.</p>
+        <p>The Flyer is a monthly neighborhood newsletter for Bushrod / North Oakland – physically as a zine posted around the neighborhood, and online at www.theflyer.org. It's a love letter to the place we live in and a way to highlight the people, plants, and stories that make this place special. At a time when everything seems to pull us into nuclear homes and personalized feeds, The Flyer celebrates the simple (but important!) life that we create together.</p>
+        <iframe
+          id="buttondown-embed"
+          scrolling="no"
+          style="width: 100% !important; height: 220px; border: 1px #ccc solid !important;"
+          src="https://buttondown.com/theflyer?as_embed=true"
+        ></iframe>
+        <script>
+          window.addEventListener("message", (event) => {
+            if (event.origin === "https://buttondown.com") {
+              const iframe = document.getElementById("buttondown-embed");
+              if (iframe && event.data?.height) {
+                iframe.style.height = event.data.height + "px";
+              }
+            }
+          });
+        </script>
+    </main>
+    <%- include('partials/scripts') %>
+</body>
+</html>

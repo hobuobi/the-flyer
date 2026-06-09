@@ -35,6 +35,10 @@ app.get('/submit', (req, res) => {
   res.render('submit');
 });
 
+app.get('/subscribe', (req, res) => {
+  res.render('subscribe');
+});
+
 app.get('/convo', (req, res) => {
   res.render('convo');
 });
