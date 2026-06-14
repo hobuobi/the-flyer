@@ -379,6 +379,13 @@
     "tags": ["food", "fun"]
   },
   {
+    "name": "North Oakland Community Assembly",
+    "date": "2026-06-14",
+    "location": "Bushrod Park",
+    "time": "3:00 PM",
+    "tags": ["activism"]
+  },
+  {
     "name": "Film: What These Walls Won't Hold (San Quentin During COVID-19)",
     "date": "2026-06-16",
     "location": "La Peña",
@@ -395,6 +402,13 @@
     "link": "https://luma.com/603gom7i"
   },
   {
+    "name": "Ricecracker SF Pop-up",
+    "date": "2026-06-18",
+    "location": "Good Times Oakland",
+    "time": "5:00 PM",
+    "tags": ["food"]
+  },
+  {
     "name": "Dykes with Drills: Intro to Tools Workshop",
     "date": "2026-06-19",
     "location": "Ace Makerspace",
@@ -403,12 +417,26 @@
     "link": "https://www.acemakerspace.org/event/dykes-with-drills-ace-makerspace-introduction-to-tools-workshop-6-19-26/"
   },
   {
+    "name": "Ricecracker SF Pop-up",
+    "date": "2026-06-19",
+    "location": "Good Times Oakland",
+    "time": "5:00 PM",
+    "tags": ["food"]
+  },
+  {
     "name": "Wardrobe Project Flea Market",
     "date": "2026-06-20",
     "location": "Rockridge BART",
     "time": "11:00 AM",
     "tags": ["fun"],
     "link": "https://thewardrobeproject.com/our-flea-market"
+  },
+  {
+    "name": "Pourmanners (Izakaya) Pop-up",
+    "date": "2026-06-20",
+    "location": "Good Times Oakland",
+    "time": "5:00 PM",
+    "tags": ["food"]
   },
   {
     "name": "Berkeley Juneteenth Festival",
@@ -441,6 +469,20 @@
     "time": "9:00 PM",
     "tags": ["music"],
     "link": "https://thestarryplough.com/event/cumbia-night-25/the-starry-plough-pub/california/"
+  },
+  {
+    "name": "Smash n' Stack Burger Shack (Pop-up)",
+    "date": "2026-06-26",
+    "location": "Good Times Oakland",
+    "time": "5:00 PM",
+    "tags": ["food"]
+  },
+  {
+    "name": "North Oakland Community Assembly",
+    "date": "2026-06-28",
+    "location": "Bushrod Park",
+    "time": "3:00 PM",
+    "tags": ["activism"]
   }
 ]
 
