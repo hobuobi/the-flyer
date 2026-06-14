@@ -5,7 +5,7 @@
     "location": "Starry Plough",
     "time": "8:00PM",
     "link": "https://thestarryplough.com/event/blues-night-19/the-starry-plough-pub/california/",
-    "tags": ["music"]
+    "tags": ["listen"]
   },
   {
     "name": "Oakland Junk Journal Club",
@@ -13,21 +13,21 @@
     "location": "Local Economy",
     "time": "1:00PM",
     "link": "https://luma.com/y7f1iw80",
-    "tags": ["crafts"]
+    "tags": ["make"]
   },
   {
     "name": "Taiwanese Street Food Pop-up",
     "date": "2026-01-11",
     "location": "Good Times Oakland",
     "time": "3:00PM",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "Immigrant Rights Sunday",
     "date": "2026-01-11",
     "location": "La Peña Cultural Center",
     "time": "5:00PM",
-    "tags": ["activism"]
+    "tags": ["serve"]
   },
   {
     "name": "Community Public Safety Meeting",
@@ -35,7 +35,7 @@
     "location": "Memorial Tabernacle Church",
     "time": "6:00PM",
     "link": "https://example.com/safety-meeting",
-    "tags": ["activism"]
+    "tags": ["serve"]
   },
   {
     "name": "Botanical Drawing Workshop",
@@ -43,7 +43,7 @@
     "location": "Local Economy",
     "time": "6:00PM",
     "link": "https://luma.com/pkjq9olr",
-    "tags": ["crafts"]
+    "tags": ["make"]
   },
   {
     "name": "Post-Punk Show (Cielo, Crystal Logic)",
@@ -51,7 +51,7 @@
     "location": "The Starry Plough",
     "time": "8:00PM",
     "link": "https://thestarryplough.com/event/ceramic-knives-w-cielo-and-crystal-logic/the-starry-plough-pub/california/",
-    "tags": ["music"]
+    "tags": ["listen"]
   },
   {
     "name": "Berkeley Balkan Bacchanal",
@@ -59,7 +59,7 @@
     "location": "The Starry Plough",
     "time": "8:00PM",
     "link": "https://thestarryplough.com/event/berkeley-balkan-bacchanal-16/the-starry-plough-pub/california/",
-    "tags": ["music"]
+    "tags": ["listen"]
   },
   {
     "name": "PLACE Farewell Event",
@@ -67,7 +67,7 @@
     "location": "St. Columbia Catholic Church",
     "time": "1:00PM",
     "link": "https://placeoakland.org/",
-    "tags": ["activism"]
+    "tags": ["serve"]
   },
   {
     "name": "Seasonal Mending Circle",
@@ -75,21 +75,21 @@
     "location": "Local Economy",
     "time": "4:00PM",
     "link": "https://luma.com/0nwb7t17",
-    "tags": ["crafts"]
+    "tags": ["make"]
   },
   {
     "name": "Las Mermeladas Community Music Jam",
     "date": "2026-01-21",
     "location": "La Peña Cultural Center",
     "time": "6:30PM",
-    "tags": ["music"]
+    "tags": ["listen"]
   },
   {
     "name": "TIME CHANGE: The Flyer Meetup",
     "date": "2026-01-26",
     "location": "Good Times Oakland",
     "time": "7:30PM",
-    "tags": ["activism"]
+    "tags": ["serve"]
   },
   {
     "name": "Making Preserved Lemons in Community",
@@ -97,14 +97,14 @@
     "location": "Preserved (on College Ave)",
     "time": "6:00PM",
     "link": "https://www.preservedgoods.com/event-details/making-preserved-lemons-in-community",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   }, 
    {
     "name": "SPRO Machine (Coffee Pop-Up)",
     "date": "2026-02-01",
     "location": "Local Economy",
     "time": "10:30 AM",
-    "tags": ["food"],
+    "tags": ["eat/drink"],
     "link": "https://www.instagram.com/p/DTx2ikClDiE/?img_index=1",
     "one-liner": "",
     "description": "Hi hello! Posting here as half of a brand-new coffee popup by myself and Christopher Sturm : spro.machine. Here to help you unlock that elusive 25th hour."
@@ -115,7 +115,7 @@
     "location": "Local Economy",
     "time": "6:00 PM",
     "link": "https://luma.com/zo8f87i5",
-    "tags": ["learning"],
+    "tags": ["learn"],
     "one-liner": "",
     "description": ""
   },
@@ -124,7 +124,7 @@
     "date": "2026-02-11",
     "location": "Local Economy",
     "time": "6:00 PM",
-    "tags": ["art"],
+    "tags": ["make"],
     "link": "https://www.thelocaleconomy.com/events/b07yspqkwc9ru1v19h0yi1w46vinqz",
     "one-liner": "",
     "description": ""
@@ -134,7 +134,7 @@
     "date": "2026-02-15",
     "location": "Local Economy",
     "time": "10:00 AM",
-    "tags": ["learning"],
+    "tags": ["learn"],
     "link": "https://www.thelocaleconomy.com/events/an-invitation-to-talk-about-death-and-dying-vol-2",
     "one-liner": "",
     "description": "\"This is not a grief session or a death cafe. It’s an invitation to gather and explore topics about aging and dying in an actionable and approachable way. We encourage you to show up and participate at your comfort level. Bring your curiosity, and a pen and paper.\""
@@ -144,7 +144,7 @@
     "date": "2026-02-21",
     "location": "The Starry Plough",
     "time": "8:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://thestarryplough.com/event/grateful-starry-nights-w-preston-barnes-and-friends/the-starry-plough-pub/california/",
     "one-liner": "",
     "description": "Hosted by Preston Barnes, Grateful Starry Nights brings together some of the Bay Area’s best musicians for a night celebrating the music of the Grateful Dead, JGB and more. Bring your dancing shoes and come join the party!"
@@ -154,7 +154,7 @@
     "date": "2026-02-14",
     "location": "The Starry Plough",
     "time": "8:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://thestarryplough.com/event/mehmooni-4/the-starry-plough-pub/california/",
     "one-liner": "",
     "description": ""
@@ -173,7 +173,7 @@
     "date": "2026-02-14",
     "location": "La Peña",
     "time": "7:30 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://lapena.org/event/love-fest-2026/",
     "one-liner": "",
     "description": "31st anniversary Love Fest, Aya de Leon started a small self-love open mic in the lounge at La Peña. Performances, live music, and dancing!"
@@ -183,7 +183,7 @@
     "date": "2026-02-07",
     "location": "La Peña",
     "time": "7:30 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://lapena.org/event/baile-brasil-samba-forro-dance-party-ft-oakland-samba-revue/",
     "one-liner": "",
     "description": "Join us on Sunday, February 7th at 7pm at La Peña Cultural Center for Baile Brasil, a night of live music and dance (samba de gafieira, forró, funk, jazz, and bolero) featuring Oakland Samba Revue (OSR) and a special dance lesson with Weslei Guimarães."
@@ -202,7 +202,7 @@
     "date": "2026-02-17",
     "location": "La Peña",
     "time": "7:00 PM",
-    "tags": ["art"],
+    "tags": ["watch"],
     "link": "https://lapena.org/event/when-we-win-political-education-film-series-2/",
     "one-liner": "",
     "description": "When We Win spotlights people’s struggles for liberation, decolonization, and the world to come. Each screening will include political education with facilitation, interactive discussions, and conversations featuring remarks from filmmakers and/or organizers active in peoples’ movements for liberation and justice."
@@ -212,7 +212,7 @@
     "date": "2026-02-19",
     "location": "La Peña",
     "time": "7:00 PM",
-    "tags": ["art", "music"],
+    "tags": ["make", "listen"],
     "link": "https://lapena.org/event/poetry-es-resistir/",
     "one-liner": "",
     "description": "POETRY ES RESISTIR with live music, teatro and poetry illuminating the struggle and beauty from North to South America. Featuring performances by: Duo Made y Feña, Herbert Siguenza of Culture Clash, Lorna Dee Cervantes, Paul S. Flores, Matt Sedillo, Fernando Torres"
@@ -222,7 +222,7 @@
     "date": "2026-02-20",
     "location": "La Peña",
     "time": "8:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://lapena.org/event/baila-community-dance-party-ft-live-salsa-5/",
     "one-liner": "",
     "description": "BAILA is like a spontaneous dance party that broke out in your kitchen, only if your kitchen had big wood floors, a live Salsa band, a powerful sound system, an upgraded lighting system and 200 of your friends, chosen family, and new faces ready to join the community."
@@ -232,7 +232,7 @@
     "date": "2026-02-18",
     "location": "La Peña",
     "time": "6:30 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://lapena.org/event/las-mermeladas-at-la-pena-2-2/2026-02-18/",
     "one-liner": "",
     "description": "Every 3rd Wednesday, musicians of all ages and skill levels come together to create music in the moment, led by José Roberto Hernández. Whether you play an instrument, love to sing, or simply want to listen and dance, there’s a place for you here."
@@ -242,7 +242,7 @@
     "date": "2026-02-08",
     "location": "Mosswood Park",
     "time": "3:00 PM",
-    "tags": ["activism"],
+    "tags": ["serve"],
     "link": "",
     "one-liner": "",
     "description": ""
@@ -252,7 +252,7 @@
     "date": "2026-02-22",
     "location": "Gold Gym",
     "time": "3:00 PM",
-    "tags": ["activism"],
+    "tags": ["serve"],
     "link": "",
     "one-liner": "",
     "description": ""
@@ -262,7 +262,7 @@
     "date": "2026-02-21",
     "location": "East Bay Community Space",
     "time": "9:30 AM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://linktr.ee/babyraveoakland",
     "one-liner": "",
     "description": ""
@@ -272,7 +272,7 @@
     "date": "2026-02-19",
     "location": "East Bay Community Space",
     "time": "7:00 PM",
-    "tags": ["fun"],
+    "tags": [],
     "link": "https://eastbaycommunityspace.org/event/ebcs-board-game-night-2/2026-02-19/",
     "one-liner": "",
     "description": "Why be bored when you could BOARD?! Roll on over to EBCS for our monthly board game night. This donation-based (no one turned away for lack of funds) community event is on the third Thursday of every month in the Telegraph room. Games start at 7pm and the event lasts until ~10/11pm. Bring games, snacks, and friends!"
@@ -282,7 +282,7 @@
     "date": "2026-02-09",
     "location": "Ace Makerspace",
     "time": "6:00 PM",
-    "tags": ["learning","crafts"],
+    "tags": ["learn","make"],
     "link": "https://www.acemakerspace.org/event/unwind-knit-crochet-and-fiber-social-2-9-26/",
     "one-liner": "",
     "description": ""
@@ -292,7 +292,7 @@
     "date": "2026-02-21",
     "location": "Ace Makerspace",
     "time": "10:00 AM",
-    "tags": ["learning","crafts"],
+    "tags": ["learn","make"],
     "link": "https://www.hellostitchstudio.com/events/learn-to-quilt-with-terri-carpenter-3?_ga=2.115157127.1268167376.1769334916-717329570.1769334916",
     "one-liner": "",
     "description": ""
@@ -302,7 +302,7 @@
     "date": "2026-02-12",
     "location": "Ace Makerspace",
     "time": "6:00 PM",
-    "tags": ["crafts"],
+    "tags": ["make"],
     "link": "https://www.acemakerspace.org/event/sewcial-night-13/",
     "one-liner": "",
     "description": "Join fellow textiles enthusiasts for a night of creating in a social environment. The Ace Textiles program has a wide array of machines, tools, and supplies. Folks should expect to work independently; no instruction is provided at this event, though peer support often happens."
@@ -312,7 +312,7 @@
     "date": "2026-02-25",
     "location": "Oakland Public Library (Temescal Branch)",
     "time": "6:00 PM",
-    "tags": ["learning","crafts"],
+    "tags": ["learn","make"],
     "link": "https://oaklandlibrary.bibliocommons.com/events/68ba7632400f532f004d777b",
     "one-liner": "",
     "description": ""
@@ -322,14 +322,14 @@
     "date": "2026-06-04",
     "location": "The Starry Plough",
     "time": "9:00 PM",
-    "tags": ["music"]
+    "tags": ["listen"]
   },
   {
     "name": "Sashiko Workshop (Japanese Mending Technique)",
     "date": "2026-06-06",
     "location": "Oakland Public Library (Temescal Branch)",
     "time": "3:00 PM",
-    "tags": ["crafts", "learning"],
+    "tags": ["make", "learn"],
     "link": "https://oaklandlibrary.bibliocommons.com/events/69f2e781213814b1b5258655?_gl=1*1wd2vcc*_ga*MTg3MjgzMzUwMC4xNzgwMzgwMTc3*_ga_L60VDC2VGD*czE3ODAzODAxNzckbzEkZzAkdDE3ODAzODAxNzckajYwJGwwJGgw*_ga_G99DMMNG39*czE3ODAzODAxNzckbzEkZzAkdDE3ODAzODA3MDgkajYwJGwwJGgw"
   },
   {
@@ -337,7 +337,7 @@
     "date": "2026-06-06",
     "location": "La Peña",
     "time": "8:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://lapena.org/event/la-penas-51st-anniversary-fundraiser-ft-orq-la-moderna-tradicion/"
   },
   {
@@ -345,14 +345,14 @@
     "date": "2026-06-07",
     "location": "The Starry Plough",
     "time": "2:00 PM",
-    "tags": ["art", "activism"]
+    "tags": ["make", "serve"]
   },
   {
     "name": "Talk: Civil Rights & Structural Attacks",
     "date": "2026-06-07",
     "location": "Local Economy",
     "time": "5:00 PM",
-    "tags": ["activism", "learning"],
+    "tags": ["serve", "learn"],
     "link": "https://luma.com/b4fz5atz"
   },
   {
@@ -360,7 +360,7 @@
     "date": "2026-06-12",
     "location": "The Starry Plough",
     "time": "8:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://thestarryplough.com/event/blues-night-24/the-starry-plough-pub/california/"
   },
   {
@@ -368,7 +368,7 @@
     "date": "2026-06-13",
     "location": "La Peña",
     "time": "12:00 PM",
-    "tags": ["food", "fun"],
+    "tags": ["eat/drink"],
     "link": "https://www.eventbrite.com/e/frida-kahlos-birthday-tianguis-outdoor-market-community-festival-tickets-1988071252634"
   },
   {
@@ -376,21 +376,21 @@
     "date": "2026-06-14",
     "location": "Nick's Pizza",
     "time": "3:00 PM",
-    "tags": ["food", "fun"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "North Oakland Community Assembly",
     "date": "2026-06-14",
     "location": "Bushrod Park",
     "time": "3:00 PM",
-    "tags": ["activism"]
+    "tags": ["serve"]
   },
   {
     "name": "Film: What These Walls Won't Hold (San Quentin During COVID-19)",
     "date": "2026-06-16",
     "location": "La Peña",
     "time": "7:00 PM",
-    "tags": ["art", "activism"],
+    "tags": ["watch", "serve"],
     "link": "https://lapena.org/event/when-we-win-political-education-film-series-6/"
   },
   {
@@ -398,7 +398,7 @@
     "date": "2026-06-18",
     "location": "Local Economy",
     "time": "6:00 PM",
-    "tags": ["food"],
+    "tags": ["eat/drink"],
     "link": "https://luma.com/603gom7i"
   },
   {
@@ -406,14 +406,14 @@
     "date": "2026-06-18",
     "location": "Good Times Oakland",
     "time": "5:00 PM",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "Dykes with Drills: Intro to Tools Workshop",
     "date": "2026-06-19",
     "location": "Ace Makerspace",
     "time": "11:00 AM",
-    "tags": ["learning"],
+    "tags": ["learn"],
     "link": "https://www.acemakerspace.org/event/dykes-with-drills-ace-makerspace-introduction-to-tools-workshop-6-19-26/"
   },
   {
@@ -421,14 +421,14 @@
     "date": "2026-06-19",
     "location": "Good Times Oakland",
     "time": "5:00 PM",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "Wardrobe Project Flea Market",
     "date": "2026-06-20",
     "location": "Rockridge BART",
     "time": "11:00 AM",
-    "tags": ["fun"],
+    "tags": ["buy"],
     "link": "https://thewardrobeproject.com/our-flea-market"
   },
   {
@@ -436,14 +436,14 @@
     "date": "2026-06-20",
     "location": "Good Times Oakland",
     "time": "5:00 PM",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "Berkeley Juneteenth Festival",
     "date": "2026-06-21",
     "location": "Alcatraz & Adeline",
     "time": "11:00 AM",
-    "tags": ["music", "activism"],
+    "tags": ["listen", "serve"],
     "link": "https://berkeleyjuneteenth.org/"
   },
   {
@@ -451,7 +451,7 @@
     "date": "2026-06-24",
     "location": "Oakland Public Library (Temescal Branch)",
     "time": "6:00 PM",
-    "tags": ["crafts", "learning"],
+    "tags": ["make", "learn"],
     "link": "https://oaklandlibrary.bibliocommons.com/events/696417e130cbd582eff4bc0b"
   },
   {
@@ -459,7 +459,7 @@
     "date": "2026-06-26",
     "location": "Local Economy",
     "time": "6:30 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://luma.com/av1d07q4"
   },
   {
@@ -467,7 +467,7 @@
     "date": "2026-06-26",
     "location": "The Starry Plough",
     "time": "9:00 PM",
-    "tags": ["music"],
+    "tags": ["listen"],
     "link": "https://thestarryplough.com/event/cumbia-night-25/the-starry-plough-pub/california/"
   },
   {
@@ -475,14 +475,14 @@
     "date": "2026-06-26",
     "location": "Good Times Oakland",
     "time": "5:00 PM",
-    "tags": ["food"]
+    "tags": ["eat/drink"]
   },
   {
     "name": "North Oakland Community Assembly",
     "date": "2026-06-28",
     "location": "Bushrod Park",
     "time": "3:00 PM",
-    "tags": ["activism"]
+    "tags": ["serve"]
   }
 ]
 
