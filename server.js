@@ -69,16 +69,16 @@ app.get('/events', (req, res) => {
     return d;
   }
 
-  // Get today's date for comparison (local time)
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  // Get today's date in Oakland's timezone. On Vercel the server runs in UTC, so
+  // using the server-local date makes "today" flip to tomorrow at 5pm Pacific and
+  // events show up hours early. en-CA formats as YYYY-MM-DD.
+  const todayStr = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Los_Angeles'
+  }).format(new Date());
 
-  // Filter to only show current and future events
-  const futureEvents = eventsData.filter(event => {
-    const eventDate = parseLocalDate(event.date);
-    return eventDate >= today;
-  });
+  // Filter to only show current and future events. event.date is YYYY-MM-DD, so a
+  // lexical string comparison is a safe (timezone-free) date comparison.
+  const futureEvents = eventsData.filter(event => event.date >= todayStr);
 
   // Separate today's events and group the rest by week
   const todayEvents = [];
