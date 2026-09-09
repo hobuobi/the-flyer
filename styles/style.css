@@ -263,6 +263,20 @@ a {
     font-family: "Boldonse", sans-serif;
     font-weight: normal;
 }
+/* Up-right arrow appended to linked event titles on hover */
+.event h3::after {
+    content: "\00A0\2197";
+    display: none;
+}
+a:hover .event h3::after,
+a:focus-visible .event h3::after {
+    display: inline;
+}
+a:hover .event h3,
+a:focus-visible .event h3 {
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
 .date-box {
     display: flex;
     flex-direction: column;
