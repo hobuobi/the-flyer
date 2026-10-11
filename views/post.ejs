@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header', { showNav: false }) %>
+    <main>
+        <%- include('partials/post', { post, inIssue: false }) %>
+    </main>
+    <%- include('partials/scripts') %>
+</body>
+</html>

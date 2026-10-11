@@ -1,0 +1,28 @@
+<%# One post of any type. Pass { post, inIssue } — inIssue hides the link back to the issue. %>
+<article class="post post-<%= post.type %>" id="<%= post.slug %>">
+    <% if (post.title) { %>
+    <h2 class="post-title"><a href="/posts/<%= post.slug %>"><%= post.title %></a></h2>
+    <% } %>
+    <div class="post-meta">
+        <span><a href="/posts/<%= post.slug %>"><%= post.displayDate %></a> · <%= post.author %></span>
+        <% if (post.issue && !inIssue) { %><span>· From <a href="/issues/<%= post.issue %>#<%= post.slug %>"><%= post.issueTitle %></a></span><% } %>
+        <% post.tags.forEach(tag => { %><a class="tag" href="/tags/<%= tag %>">#<%= tag %></a><% }) %>
+    </div>
+    <% if (post.type === 'image') { %>
+    <figure>
+        <img src="<%= post.media %>" alt="<%= post.alt %>" loading="lazy">
+        <figcaption><%- post.html %></figcaption>
+    </figure>
+    <% } else if (post.type === 'video') { %>
+    <figure>
+        <% if (post.embedUrl) { %>
+        <div class="video-embed"><iframe src="<%= post.embedUrl %>" title="<%= post.title || 'Video' %>" allowfullscreen loading="lazy"></iframe></div>
+        <% } else { %>
+        <video src="<%= post.media %>" controls playsinline preload="metadata"></video>
+        <% } %>
+        <figcaption><%- post.html %></figcaption>
+    </figure>
+    <% } else { %>
+    <div class="post-body"><%- post.html %></div>
+    <% } %>
+</article>

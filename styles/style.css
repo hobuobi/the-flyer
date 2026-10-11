@@ -352,6 +352,68 @@ a:focus-visible .event h3 {
     margin-right: 50px;
 }  
 */ 
+/* Posts */
+.post {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #6E540033;
+}
+.post-title a {
+    color: inherit;
+}
+.post-title a:hover,
+.post-title a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+.post figure {
+    margin: 1rem;
+}
+.post figure img,
+.post figure video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.post figcaption p {
+    margin: 10px 0 0;
+}
+.video-embed {
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+.post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    margin: 8px 1rem 14px;
+    font-family: "DM Mono", monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+.post-meta span {
+    color: #6E5400AA;
+}
+.tag {
+    font-family: "DM Mono", monospace;
+}
+.feed {
+    margin-top: 40px;
+}
+.feed-more {
+    text-align: center;
+    margin: 20px 1rem;
+    font-family: "DM Mono", monospace;
+    text-transform: uppercase;
+}
 @keyframes marquee {
     100% { transform: translateX(-200%); }
 }
@@ -524,4 +586,10 @@ html.night-mode .today-event .date-box {
     background-color: #2D2745;
     color: #FFF9E4;
     border: none;
+}
+html.night-mode .post {
+    border-bottom-color: #4a4365;
+}
+html.night-mode .post-meta span {
+    color: #FFF9E4AA;
 }

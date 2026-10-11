@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header', { activeNav: 'digest' }) %>
+    <main>
+        <div class="issue-title"><h1><%= heading %></h1></div>
+        <% posts.forEach(post => { %>
+        <%- include('partials/post', { post, inIssue: false }) %>
+        <% }) %>
+    </main>
+    <%- include('partials/scripts') %>
+</body>
+</html>
