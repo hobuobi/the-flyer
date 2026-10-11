@@ -6,8 +6,10 @@
 <body>
     <%- include('partials/header', { showNav: false }) %>
     <main>
-        <div class="issue-title"><h1><%= title %></h1></div>
-        <%- content %>
+        <div class="issue-title"><h1><%= issue.title %></h1></div>
+        <% issue.posts.forEach(post => { %>
+        <%- include('partials/post', { post, inIssue: true }) %>
+        <% }) %>
     </main>
     <%- include('partials/scripts') %>
 </body>

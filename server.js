@@ -6,11 +6,10 @@ const matter = require('gray-matter'); */
 
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
-import { marked } from 'marked';
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
-import matter from 'gray-matter';
+import { getPosts, getPost, getIssues, getIssue } from './lib/posts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,7 +27,27 @@ app.use('/static/fonts', express.static(path.join(__dirname, 'fonts')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { issues: getIssues(), recentPosts: getPosts({ limit: 10 }) });
+});
+
+app.get('/posts', (req, res) => {
+  res.render('posts', { title: 'All Posts', heading: 'All Posts', posts: getPosts() });
+});
+
+app.get('/posts/:slug', (req, res) => {
+  const post = getPost(req.params.slug);
+  if (!post) {
+    return res.status(404).send('Post not found');
+  }
+  res.render('post', { title: post.title || post.displayDate, post });
+});
+
+app.get('/tags/:tag', (req, res) => {
+  const posts = getPosts({ tag: req.params.tag });
+  if (!posts.length) {
+    return res.status(404).send('Tag not found');
+  }
+  res.render('posts', { title: `#${req.params.tag}`, heading: `#${req.params.tag}`, posts });
 });
 
 app.get('/submit', (req, res) => {
@@ -112,16 +131,11 @@ app.get('/events', (req, res) => {
 
 // Issue pages: /issues/:slug (e.g., /issues/nov-25)
 app.get('/issues/:slug', (req, res) => {
-  const filePath = path.join(__dirname, 'content', 'issues', `${req.params.slug}.md`);
-  if (!fs.existsSync(filePath)) {
+  const issue = getIssue(req.params.slug);
+  if (!issue) {
     return res.status(404).send('Issue not found');
   }
-
-  const file = fs.readFileSync(filePath, 'utf-8');
-  const { data, content } = matter(file);
-  const html = marked(content);
-
-  res.render('issue', { title: data.title, content: html });
+  res.render('issue', { title: issue.title, issue });
 });
 
 /*
