@@ -101,6 +101,7 @@
     window.isNightMode = () => document.documentElement.classList.contains('night-mode');
 
     (async function initNightMode() {
+        if (!window.NIGHT_MODE_ENABLED) return;
         let sunrise = null;
         let sunset = null;
 
