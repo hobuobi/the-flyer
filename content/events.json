@@ -976,5 +976,141 @@
     "time": "8:00 PM",
     "tags": ["listen"],
     "link": "https://thestarryplough.com/event/super-greens-w-purple-albatross/the-starry-plough-pub/california/"
+  },
+  {
+    "name": "Bones & Brews",
+    "date": "2026-11-08",
+    "location": "Hoi Polloi",
+    "time": "3:00 PM",
+    "tags": ["listen", "eat/drink", "play"],
+    "link": "https://www.instagram.com/p/DfVFxJcPvvG/?hl=en"
+  },
+  {
+    "name": "Muchos Art & Comic Expo",
+    "date": "2026-11-08",
+    "location": "La Peña",
+    "time": "12:00 PM",
+    "tags": ["make"],
+    "link": "https://www.muchoscomics.com/"
+  },
+  {
+    "name": "Find Your Story: Local Authors, Librarians, and Belonging",
+    "date": "2026-11-09",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "tags": ["learn", "make"],
+    "link": "https://oaklandliteracycoalition.org/training-event/find-your-story-local-authors-librarians-belonging/"
+  },
+  {
+    "name": "Queer Bingo",
+    "date": "2026-11-11",
+    "location": "White Horse Bar",
+    "time": "7:00 PM",
+    "tags": ["play"],
+    "link": "https://www.instagram.com/p/DfYlp7upbMb/"
+  },
+  {
+    "name": "Empowering Women of Color Open Mic",
+    "date": "2026-11-13",
+    "location": "La Peña",
+    "time": "8:00 PM",
+    "tags": ["make", "serve"],
+    "link": "https://lapena.org/event/empowering-women-of-color-open-mic-berkeley-ca/"
+  },
+  {
+    "name": "Valksgiving (Championship Celebration)",
+    "date": "2026-11-13",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "tags": ["play"],
+    "link": "https://luma.com/fb0ugfgg"
+  },
+  {
+    "name": "Puzzle Swap",
+    "date": "2026-11-14",
+    "location": "Local Economy",
+    "time": "2:00 PM",
+    "tags": ["play"],
+    "link": "https://luma.com/7ogucgrf"
+  },
+  {
+    "name": "Soup Swap",
+    "date": "2026-11-15",
+    "location": "Local Economy",
+    "time": "2:00 PM",
+    "tags": ["play"],
+    "link": "https://luma.com/yik8gd7e"
+  },
+  {
+    "name": "\"Scotch Doubles\" Billiards Tournament",
+    "date": "2026-11-15",
+    "location": "White Horse Bar",
+    "time": "3:00 PM",
+    "tags": ["play"],
+    "link": "https://www.instagram.com/p/DfYUReeIdrH/"
+  },
+  {
+    "name": "\"Just Vibing\" Dinner Pop-Up",
+    "date": "2026-11-15",
+    "location": "Good Times Oakland",
+    "time": "4:00 PM",
+    "tags": ["eat/drink"],
+    "link": "https://www.instagram.com/p/DfDzONAJYIu/"
+  },
+  {
+    "name": "Bare Knuckle Pizza Pop-up",
+    "date": "2026-11-19",
+    "location": "Good Times Oakland",
+    "time": "4:00 PM",
+    "tags": ["eat/drink"],
+    "link": "https://www.instagram.com/p/DfTQ3Etmpb7/?img_index=1"
+  },
+  {
+    "name": "Tejas and Rajas Violin Brothers",
+    "date": "2026-11-20",
+    "location": "Root Stock Arts",
+    "time": "7:00 PM",
+    "tags": ["listen"],
+    "link": "https://www.viewcy.com/event/tejas_and_rajas_violi"
+  },
+  {
+    "name": "Francis Wong Quartet",
+    "date": "2026-11-21",
+    "location": "Root Stock Arts",
+    "time": "7:00 PM",
+    "tags": ["listen"],
+    "link": "https://www.viewcy.com/event/francis_wong_quartet"
+  },
+  {
+    "name": "Thanks Taken (29th Anniversary)",
+    "date": "2026-11-22",
+    "location": "La Peña",
+    "time": "6:00 PM",
+    "tags": ["learn", "make", "listen"],
+    "link": "https://lapena.org/event/20-years-of-thangs-taken-rethinking-thanksgiving/"
+  },
+  {
+    "name": "Palestinian Embroidery Workshop",
+    "date": "2026-11-24",
+    "location": "Local Economy",
+    "time": "6:00 PM",
+    "tags": ["make"],
+    "link": "https://luma.com/83tkx4rp"
+  },
+  {
+    "name": "Persimmon and Moon Art Festival",
+    "date": "2026-11-28",
+    "location": "La Peña",
+    "time": "11:00 AM",
+    "tags": ["make", "buy"],
+    "link": "https://lapena.org/event/iwin-persimmon-moon-art-fair/"
+  },
+  {
+    "name": "Artist Gathering",
+    "date": "2026-11-29",
+    "location": "Root Stock Arts",
+    "time": "6:00 PM",
+    "tags": ["make"],
+    "link": "https://www.viewcy.com/event/artist_gathering_3"
   }
 ]
